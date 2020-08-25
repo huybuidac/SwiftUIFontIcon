@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F634C7CA24F5956B00364D38 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = F634C7C924F5956B00364D38 /* SwiftUIFontIcon */; };
 		F64837C224F585100092E934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64837C124F585100092E934 /* AppDelegate.swift */; };
 		F64837C424F585100092E934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64837C324F585100092E934 /* ContentView.swift */; };
 		F64837C624F585120092E934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64837C524F585120092E934 /* Assets.xcassets */; };
 		F64837C924F585120092E934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64837C824F585120092E934 /* Preview Assets.xcassets */; };
 		F64837CC24F585120092E934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64837CA24F585120092E934 /* Main.storyboard */; };
-		F6A37B9424F585F100CCD33F /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = F6A37B9324F585F100CCD33F /* SwiftUIFontIcon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A37B9424F585F100CCD33F /* SwiftUIFontIcon in Frameworks */,
+				F634C7CA24F5956B00364D38 /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 			);
 			name = SwiftUIFontIconDemo_osx;
 			packageProductDependencies = (
-				F6A37B9324F585F100CCD33F /* SwiftUIFontIcon */,
+				F634C7C924F5956B00364D38 /* SwiftUIFontIcon */,
 			);
 			productName = SwiftUIFontIconDemo_osx;
 			productReference = F64837BE24F585100092E934 /* SwiftUIFontIconDemo_osx.app */;
@@ -360,7 +360,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F6A37B9324F585F100CCD33F /* SwiftUIFontIcon */ = {
+		F634C7C924F5956B00364D38 /* SwiftUIFontIcon */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftUIFontIcon;
 		};

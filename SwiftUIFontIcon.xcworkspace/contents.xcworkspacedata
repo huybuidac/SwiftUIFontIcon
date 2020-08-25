@@ -5,6 +5,6 @@
       location = "group:SwiftUIFontIconDemo_osx/SwiftUIFontIconDemo_osx.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SwiftUIFontIcon">
+      location = "container:">
    </FileRef>
 </Workspace>
