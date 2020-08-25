@@ -43,65 +43,67 @@ extension Color {
     #if os(iOS)
     private func toUIColor0() -> UIColor? {
         switch self {
-            case .clear:
-                return .clear
-            case .black:
-                return .black
-            case .white:
-                return .white
-            case .gray:
-                return .systemGray
-            case .red:
-                return .systemRed
-            case .green:
-                return .systemGreen
-            case .blue:
-                return .systemBlue
-            case .orange:
-                return .systemOrange
-            case .yellow:
-                return .systemYellow
-            case .pink:
-                return .systemPink
-            case .primary:
-                return .label // FIXME?
-            case .secondary:
-                return .secondaryLabel // FIXME?
-            default:
-                return nil
+        case .accentColor:
+            return .label
+        case .clear:
+            return .clear
+        case .black:
+            return .black
+        case .white:
+            return .white
+        case .gray:
+            return .systemGray
+        case .red:
+            return .systemRed
+        case .green:
+            return .systemGreen
+        case .blue:
+            return .systemBlue
+        case .orange:
+            return .systemOrange
+        case .yellow:
+            return .systemYellow
+        case .pink:
+            return .systemPink
+        case .primary:
+            return .label // FIXME?
+        case .secondary:
+            return .secondaryLabel // FIXME?
+        default:
+            return nil
         }
     }
     
     private func toUIColor1() -> UIColor? {
         switch self {
-            case .clear:
-                return UIColor.clear
-            case .black:
-                return UIColor.black
-            case .white:
-                return UIColor.white
-            case .gray:
-                return UIColor.systemGray
-            case .red:
-                return UIColor.systemRed
-            case .green:
-                return UIColor.systemGreen
-            case .blue:
-                return UIColor.systemBlue
-            case .orange:
-                return UIColor.systemOrange
-            case .yellow:
-                return UIColor.systemYellow
-            case .pink:
-                return UIColor.systemPink
-            case .purple:
-                return UIColor.systemPurple
-            case .primary:
-                return UIColor.label
-            case .secondary:
-                return UIColor.secondaryLabel
-            default:
-                return nil
+        case .clear:
+            return UIColor.clear
+        case .black:
+            return UIColor.black
+        case .white:
+            return UIColor.white
+        case .gray:
+            return UIColor.systemGray
+        case .red:
+            return UIColor.systemRed
+        case .green:
+            return UIColor.systemGreen
+        case .blue:
+            return UIColor.systemBlue
+        case .orange:
+            return UIColor.systemOrange
+        case .yellow:
+            return UIColor.systemYellow
+        case .pink:
+            return UIColor.systemPink
+        case .purple:
+            return UIColor.systemPurple
+        case .primary:
+            return UIColor.label
+        case .secondary:
+            return UIColor.secondaryLabel
+        default:
+            return nil
         }
     }
     
@@ -142,40 +144,40 @@ extension Color {
         guard let rgb = hexString.trimmingCharacters(in: .newlines).rgbColor() else {
             return nil
         }
-
+        
         return UIColor(red: rgb.red, green: rgb.green, blue: rgb.blue, alpha: 1.0)
     }
     
     public func toUIColor3() -> UIColor? {
         switch description {
-            case "clear":
-                return UIColor.clear
-            case "black":
-                return UIColor.black
-            case "white":
-                return UIColor.white
-            case "gray":
-                return UIColor.systemGray
-            case "red":
-                return UIColor.systemRed
-            case "green":
-                return UIColor.systemGreen
-            case "blue":
-                return UIColor.systemBlue
-            case "orange":
-                return UIColor.systemOrange
-            case "yellow":
-                return UIColor.systemYellow
-            case "pink":
-                return UIColor.systemPink
-            case "purple":
-                return UIColor.systemPurple
-            case "primary":
-                return UIColor.label
-            case "secondary":
-                return UIColor.secondaryLabel
-            default:
-                return nil
+        case "clear":
+            return UIColor.clear
+        case "black":
+            return UIColor.black
+        case "white":
+            return UIColor.white
+        case "gray":
+            return UIColor.systemGray
+        case "red":
+            return UIColor.systemRed
+        case "green":
+            return UIColor.systemGreen
+        case "blue":
+            return UIColor.systemBlue
+        case "orange":
+            return UIColor.systemOrange
+        case "yellow":
+            return UIColor.systemYellow
+        case "pink":
+            return UIColor.systemPink
+        case "purple":
+            return UIColor.systemPurple
+        case "primary":
+            return UIColor.label
+        case "secondary":
+            return UIColor.secondaryLabel
+        default:
+            return nil
         }
     }
     
@@ -202,65 +204,67 @@ extension Color {
     #if os(macOS)
     private func nsColor0() -> NSColor? {
         switch self {
-            case .clear:
-                return .clear
-            case .black:
-                return .black
-            case .white:
-                return .white
-            case .gray:
-                return .systemGray
-            case .red:
-                return .systemRed
-            case .green:
-                return .systemGreen
-            case .blue:
-                return .systemBlue
-            case .orange:
-                return .systemOrange
-            case .yellow:
-                return .systemYellow
-            case .pink:
-                return .systemPink
-            case .primary:
-                return .labelColor // FIXME?
-            case .secondary:
-                return .secondaryLabelColor // FIXME?
-            default:
-                return nil
+        case .accentColor:
+            return .controlAccentColor
+        case .clear:
+            return .clear
+        case .black:
+            return .black
+        case .white:
+            return .white
+        case .gray:
+            return .systemGray
+        case .red:
+            return .systemRed
+        case .green:
+            return .systemGreen
+        case .blue:
+            return .systemBlue
+        case .orange:
+            return .systemOrange
+        case .yellow:
+            return .systemYellow
+        case .pink:
+            return .systemPink
+        case .primary:
+            return .labelColor // FIXME?
+        case .secondary:
+            return .secondaryLabelColor // FIXME?
+        default:
+            return nil
         }
     }
     
     private func nsColor1() -> NSColor? {
         switch self {
-            case .clear:
-                return NSColor.clear
-            case .black:
-                return NSColor.black
-            case .white:
-                return NSColor.white
-            case .gray:
-                return NSColor.systemGray
-            case .red:
-                return NSColor.systemRed
-            case .green:
-                return NSColor.systemGreen
-            case .blue:
-                return NSColor.systemBlue
-            case .orange:
-                return NSColor.systemOrange
-            case .yellow:
-                return NSColor.systemYellow
-            case .pink:
-                return NSColor.systemPink
-            case .purple:
-                return NSColor.systemPurple
-            case .primary:
-                return NSColor.labelColor
-            case .secondary:
-                return NSColor.secondaryLabelColor
-            default:
-                return nil
+        case .clear:
+            return NSColor.clear
+        case .black:
+            return NSColor.black
+        case .white:
+            return NSColor.white
+        case .gray:
+            return NSColor.systemGray
+        case .red:
+            return NSColor.systemRed
+        case .green:
+            return NSColor.systemGreen
+        case .blue:
+            return NSColor.systemBlue
+        case .orange:
+            return NSColor.systemOrange
+        case .yellow:
+            return NSColor.systemYellow
+        case .pink:
+            return NSColor.systemPink
+        case .purple:
+            return NSColor.systemPurple
+        case .primary:
+            return NSColor.labelColor
+        case .secondary:
+            return NSColor.secondaryLabelColor
+        default:
+            return nil
         }
     }
     
@@ -301,40 +305,40 @@ extension Color {
         guard let rgb = hexString.trimmingCharacters(in: .newlines).rgbColor() else {
             return nil
         }
-
+        
         return NSColor(red: rgb.red, green: rgb.green, blue: rgb.blue, alpha: 1.0)
     }
     
     public func nsColor3() -> NSColor? {
         switch description {
-            case "clear":
-                return .clear
-            case "black":
-                return .black
-            case "white":
-                return .white
-            case "gray":
-                return .systemGray
-            case "red":
-                return .systemRed
-            case "green":
-                return .systemGreen
-            case "blue":
-                return .systemBlue
-            case "orange":
-                return .systemOrange
-            case "yellow":
-                return .systemYellow
-            case "pink":
-                return .systemPink
-            case "purple":
-                return .systemPurple
-            case "primary":
-                return .labelColor
-            case "secondary":
-                return .secondaryLabelColor
-            default:
-                return nil
+        case "clear":
+            return .clear
+        case "black":
+            return .black
+        case "white":
+            return .white
+        case "gray":
+            return .systemGray
+        case "red":
+            return .systemRed
+        case "green":
+            return .systemGreen
+        case "blue":
+            return .systemBlue
+        case "orange":
+            return .systemOrange
+        case "yellow":
+            return .systemYellow
+        case "pink":
+            return .systemPink
+        case "purple":
+            return .systemPurple
+        case "primary":
+            return .labelColor
+        case "secondary":
+            return .secondaryLabelColor
+        default:
+            return nil
         }
     }
     
