@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftUIFontIconDemo_iOS/SwiftUIFontIconDemo_iOS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SwiftUIFontIconDemo_osx/SwiftUIFontIconDemo_osx.xcodeproj">
    </FileRef>
    <FileRef

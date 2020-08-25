@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6AB575024F59A5B000EF8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB574F24F59A5B000EF8A1 /* AppDelegate.swift */; };
+		F6AB575224F59A5B000EF8A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB575124F59A5B000EF8A1 /* SceneDelegate.swift */; };
+		F6AB575424F59A5B000EF8A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB575324F59A5B000EF8A1 /* ContentView.swift */; };
+		F6AB575624F59A5C000EF8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6AB575524F59A5C000EF8A1 /* Assets.xcassets */; };
+		F6AB575924F59A5C000EF8A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6AB575824F59A5C000EF8A1 /* Preview Assets.xcassets */; };
+		F6AB575C24F59A5C000EF8A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AB575A24F59A5C000EF8A1 /* LaunchScreen.storyboard */; };
+		F6DBBC1124F59BE30045E349 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = F6DBBC1024F59BE30045E349 /* SwiftUIFontIcon */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F6AB574C24F59A5B000EF8A1 /* SwiftUIFontIconDemo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIFontIconDemo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6AB574F24F59A5B000EF8A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6AB575124F59A5B000EF8A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F6AB575324F59A5B000EF8A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6AB575524F59A5C000EF8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6AB575824F59A5C000EF8A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6AB575B24F59A5C000EF8A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6AB575D24F59A5C000EF8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6AB574924F59A5B000EF8A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DBBC1124F59BE30045E349 /* SwiftUIFontIcon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6AB574324F59A5B000EF8A1 = {
+			isa = PBXGroup;
+			children = (
+				F6AB574E24F59A5B000EF8A1 /* SwiftUIFontIconDemo_iOS */,
+				F6AB574D24F59A5B000EF8A1 /* Products */,
+				F6DBBC0F24F59BE30045E349 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6AB574D24F59A5B000EF8A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB574C24F59A5B000EF8A1 /* SwiftUIFontIconDemo_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6AB574E24F59A5B000EF8A1 /* SwiftUIFontIconDemo_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB574F24F59A5B000EF8A1 /* AppDelegate.swift */,
+				F6AB575124F59A5B000EF8A1 /* SceneDelegate.swift */,
+				F6AB575324F59A5B000EF8A1 /* ContentView.swift */,
+				F6AB575524F59A5C000EF8A1 /* Assets.xcassets */,
+				F6AB575A24F59A5C000EF8A1 /* LaunchScreen.storyboard */,
+				F6AB575D24F59A5C000EF8A1 /* Info.plist */,
+				F6AB575724F59A5C000EF8A1 /* Preview Content */,
+			);
+			path = SwiftUIFontIconDemo_iOS;
+			sourceTree = "<group>";
+		};
+		F6AB575724F59A5C000EF8A1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB575824F59A5C000EF8A1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6DBBC0F24F59BE30045E349 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6AB574B24F59A5B000EF8A1 /* SwiftUIFontIconDemo_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6AB576024F59A5C000EF8A1 /* Build configuration list for PBXNativeTarget "SwiftUIFontIconDemo_iOS" */;
+			buildPhases = (
+				F6AB574824F59A5B000EF8A1 /* Sources */,
+				F6AB574924F59A5B000EF8A1 /* Frameworks */,
+				F6AB574A24F59A5B000EF8A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIFontIconDemo_iOS;
+			packageProductDependencies = (
+				F6DBBC1024F59BE30045E349 /* SwiftUIFontIcon */,
+			);
+			productName = SwiftUIFontIconDemo_iOS;
+			productReference = F6AB574C24F59A5B000EF8A1 /* SwiftUIFontIconDemo_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6AB574424F59A5B000EF8A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Huy Bui Dac";
+				TargetAttributes = {
+					F6AB574B24F59A5B000EF8A1 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = F6AB574724F59A5B000EF8A1 /* Build configuration list for PBXProject "SwiftUIFontIconDemo_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6AB574324F59A5B000EF8A1;
+			productRefGroup = F6AB574D24F59A5B000EF8A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6AB574B24F59A5B000EF8A1 /* SwiftUIFontIconDemo_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6AB574A24F59A5B000EF8A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AB575C24F59A5C000EF8A1 /* LaunchScreen.storyboard in Resources */,
+				F6AB575924F59A5C000EF8A1 /* Preview Assets.xcassets in Resources */,
+				F6AB575624F59A5C000EF8A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6AB574824F59A5B000EF8A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AB575024F59A5B000EF8A1 /* AppDelegate.swift in Sources */,
+				F6AB575224F59A5B000EF8A1 /* SceneDelegate.swift in Sources */,
+				F6AB575424F59A5B000EF8A1 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6AB575A24F59A5C000EF8A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6AB575B24F59A5C000EF8A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6AB575E24F59A5C000EF8A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6AB575F24F59A5C000EF8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6AB576124F59A5C000EF8A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIFontIconDemo_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = WX5T52FQ4X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIFontIconDemo_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huybui.SwiftUIFontIconDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6AB576224F59A5C000EF8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIFontIconDemo_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = WX5T52FQ4X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIFontIconDemo_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huybui.SwiftUIFontIconDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6AB574724F59A5B000EF8A1 /* Build configuration list for PBXProject "SwiftUIFontIconDemo_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AB575E24F59A5C000EF8A1 /* Debug */,
+				F6AB575F24F59A5C000EF8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6AB576024F59A5C000EF8A1 /* Build configuration list for PBXNativeTarget "SwiftUIFontIconDemo_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AB576124F59A5C000EF8A1 /* Debug */,
+				F6AB576224F59A5C000EF8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6DBBC1024F59BE30045E349 /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIFontIcon;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F6AB574424F59A5B000EF8A1 /* Project object */;
+}
