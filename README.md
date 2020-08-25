@@ -39,7 +39,7 @@ FontIcon(.materialIcon(code: .search), color: .pink, fontsize: 40)
 
 ![Test Image 3](/resources/demo_code.png)
 
-## Supporeted fonts
+## Supported fonts
 
 Currently, SwiftUIFontIcon supports:
 - Material icon
