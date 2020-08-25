@@ -23,6 +23,9 @@ To run the example project, using **xcode 12 beta**
 The library is very very easy to use, just something like this :)
 
 ```swift
+import SwiftIconFont
+...
+
 FontIcon(.materialIcon(code: .search))
 ```
 
