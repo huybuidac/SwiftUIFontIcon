@@ -1,6 +1,6 @@
 ## SwiftUIFontIcon
 
-Font icon for SwiftUI
+The easiest way to implement font icons in your SwiftUI project.
 
 ## Installation
 
@@ -37,7 +37,9 @@ The preferred way of installing SwiftUIX is via the [Swift Package Manager](http
 
 ## Sample
 
-To run the example project, using **xcode 12 beta**
+To run the example project of SPM, using **xcode 12 beta**
+
+To run the example project of Cocoapods, using **xcode 11 || 12 beta**
 
 ## Usage
 
