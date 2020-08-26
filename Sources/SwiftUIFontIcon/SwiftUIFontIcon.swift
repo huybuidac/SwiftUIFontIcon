@@ -68,7 +68,7 @@ var loadedFonts = [FontCode]()
 class FontLoader: NSObject {
     class func loadFont(_ fontCode: FontCode) {
         let fontName = fontCode.fileName
-        let paths = Bundle.module.paths(forResourcesOfType: "ttf", inDirectory: nil)
+        let paths = self.getFontPaths()
         var fontURL = URL(string: "")
         var error: Unmanaged<CFError>?
 

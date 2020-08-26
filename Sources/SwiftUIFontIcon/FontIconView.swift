@@ -29,9 +29,9 @@ public struct FontIcon : View {
     
     public var body: some View {
         #if os(iOS)
-        FontIconUIKit(fontCode: fontCode, color: color, fontsize: fontsize).fixedSize()
+        return FontIconUIKit(fontCode: fontCode, color: color, fontsize: fontsize).fixedSize()
         #else
-        FontIconAppKit(fontCode: fontCode, color: color, fontsize: fontsize).fixedSize()
+        return FontIconAppKit(fontCode: fontCode, color: color, fontsize: fontsize).fixedSize()
         #endif
     }
 }

@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "Pods_demo">
+      <FileRef
+         location = "group:SwiftUIFontIconDemo_Pods_iOS/Pods/Pods.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SwiftUIFontIconDemo_Pods_osx/SwiftUIFontIconDemo_Pods_osx.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SwiftUIFontIconDemo_Pods_iOS/SwiftUIFontIconDemo_Pods_iOS.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:SwiftUIFontIconDemo_iOS/SwiftUIFontIconDemo_iOS.xcodeproj">
    </FileRef>

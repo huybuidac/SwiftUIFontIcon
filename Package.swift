@@ -24,11 +24,14 @@ let package = Package(
         .target(
             name: "SwiftUIFontIcon",
             dependencies: [],
+            exclude: [
+                "Helpers/FontLoader.pod.swift"
+            ],
             resources: [
                 .process("Resources")
-//                .copy("FontAwesome5Free-Regular.ttf"),
-//                .copy("Ionicons.ttf"),
-//                .copy("MaterialIcons-Regular.ttf")
+                //                .copy("FontAwesome5Free-Regular.ttf"),
+                //                .copy("Ionicons.ttf"),
+                //                .copy("MaterialIcons-Regular.ttf")
             ]),
         .testTarget(
             name: "SwiftUIFontIconTests",
