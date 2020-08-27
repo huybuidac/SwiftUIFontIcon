@@ -2,6 +2,27 @@
 
 The easiest way to implement font icons in your SwiftUI project.
 
+## Usage
+
+The library is super super easy to use, just something like this :)
+
+```swift
+import SwiftIconFont
+...
+
+FontIcon.text(.materialIcon(code: .access_alarm))
+```
+
+There are 2 more options:
+- color
+- fontsize
+
+```swift
+FontIcon.text(.materialIcon(code: .access_alarm), fontsize: 30)
+```
+
+![Test Image 3](/resources/demo_code.png)
+
 ## Installation
 
 ### Cocoapods (Xcode 11 & Xcode 12)
@@ -40,27 +61,6 @@ The preferred way of installing SwiftUIX is via the [Swift Package Manager](http
 To run the example project of SPM, using **xcode 12 beta**
 
 To run the example project of Cocoapods, using **xcode 11 || 12 beta**
-
-## Usage
-
-The library is super super easy to use, just something like this :)
-
-```swift
-import SwiftIconFont
-...
-
-FontIcon.text(.materialIcon(code: .access_alarm))
-```
-
-There are 2 more options:
-- color
-- fontsize
-
-```swift
-FontIcon.text(.materialIcon(code: .access_alarm), fontsize: 30)
-```
-
-![Test Image 3](/resources/demo_code.png)
 
 ## Supported fonts
 
