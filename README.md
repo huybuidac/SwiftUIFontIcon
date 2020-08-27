@@ -49,7 +49,7 @@ The library is very very easy to use, just something like this :)
 import SwiftIconFont
 ...
 
-FontIcon(.materialIcon(code: .search))
+FontIcon.text(.materialIcon(code: .access_alarm))
 ```
 
 There are 2 more options:
@@ -57,7 +57,7 @@ There are 2 more options:
 - fontsize
 
 ```swift
-FontIcon(.materialIcon(code: .search), color: .pink, fontsize: 40)
+FontIcon.text(.materialIcon(code: .access_alarm), fontsize: 30)
 ```
 
 ![Test Image 3](/resources/demo_code.png)

@@ -11,19 +11,24 @@ import SwiftUIFontIcon
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
+            HStack(alignment: .center){
+                Text("Material icon:").frame(width: 150, alignment: .trailing)
+                FontIcon.text(.materialIcon(code: .person))
+                Spacer()
+            }.frame(height: 80)
             HStack{
-                Text("Material icon:").frame(width: 150)
-                FontIcon(.materialIcon(code: .battery_std))
-            }
+                Text("ionicons:").frame(width: 150, alignment: .trailing)
+                FontIcon.text(.ionicon(code: .md_people), color: .white)
+                    .background(Color.blue)
+                Spacer()
+            }.frame(height: 80)
             HStack{
-                Text("ionicons:").frame(width: 150)
-                FontIcon(.ionicon(code: .md_people), color: .red, fontsize: 30)
-            }
-            HStack{
-                Text("Font Awesome 5:").frame(width: 150)
-                FontIcon(.awesome5Solid(code: .ad), color: .blue, fontsize: 30)
-            }
+                Text("Font Awesome 5:").frame(width: 150, alignment: .trailing)
+                FontIcon.text(.awesome5Solid(code: .ad), fontsize: 24)
+                    .foregroundColor(.pink)
+                Spacer()
+            }.frame(height: 80)
         }
     }
 }

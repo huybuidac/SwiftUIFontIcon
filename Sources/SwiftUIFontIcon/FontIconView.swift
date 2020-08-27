@@ -15,91 +15,30 @@ import AppKit
 import Foundation
 import SwiftUI
 
-public struct FontIcon : View {
-    
-    let fontCode: FontCode
-    var color: Color
-    var fontsize = 20.0
-    
-    public init(_ font: FontCode, color: Color = .primary, fontsize: Double = 20) {
-        self.fontCode = font
-        self.color = color
-        self.fontsize = fontsize
-    }
-    
-    public var body: some View {
+public class FontIcon {
+    public static func text(_ fontCode: FontCode, fontsize: CGFloat = 20, color: Color? = nil) -> Text {
+        var shouldLoadFont = false
         #if os(iOS)
-        return FontIconUIKit(fontCode: fontCode, color: color, fontsize: fontsize).fixedSize()
+        shouldLoadFont = UIFont(name: fontCode.fontFamilyName, size: fontsize) == nil
         #else
-        return FontIconAppKit(fontCode: fontCode, color: color, fontsize: fontsize).fixedSize()
+        shouldLoadFont =  NSFont(name: fontCode.fontFamilyName, size: fontsize) == nil
         #endif
+        if shouldLoadFont {
+            FontLoader.loadFont(fontCode)
+        }
+        let text = Text(fontCode.code).font(.custom(fontCode.fontFamilyName, size: fontsize))
+        
+        return color == nil ? text : text.foregroundColor(color!)
     }
 }
-
-#if os(OSX)
-public struct FontIconAppKit: NSViewRepresentable {
-    public var fontCode: FontCode
-    public var color: Color
-    public var fontsize: Double
-    
-    public init(fontCode: FontCode, color: Color = .primary, fontsize: Double = 20) {
-        self.fontCode = fontCode
-        self.color = color
-        self.fontsize = fontsize
-    }
-    
-    public func makeNSView(context: Context) -> NSTextField {
-        let tf = NSTextField()
-        tf.isEditable = false
-        tf.isBordered = false
-        tf.isEnabled = false
-        tf.isBezeled = false
-        tf.textColor = .controlTextColor
-        tf.backgroundColor = .clear
-        tf.maximumNumberOfLines = 1
-        tf.preferredMaxLayoutWidth = 30
-        return tf
-    }
-
-    public func updateNSView(_ nsView: NSTextField, context: Context) {
-        nsView.textColor = color.nsColor()
-        nsView.stringValue = fontCode.code
-        nsView.font = fontCode.systemFont(size: CGFloat(fontsize))
-    }
-}
-#endif
-
-#if os(iOS)
-public struct FontIconUIKit: UIViewRepresentable {
-    public var fontCode: FontCode
-    public var color: Color
-    public var fontsize: Double
-
-    public init(fontCode: FontCode, color: Color = .primary, fontsize: Double = 20) {
-        self.fontCode = fontCode
-        self.color = color
-        self.fontsize = fontsize
-    }
-    
-    public func makeUIView(context: Context) -> UILabel {
-        let tf = UILabel()
-        tf.textAlignment = .center
-        tf.backgroundColor = .clear
-        return tf
-    }
-
-    public func updateUIView(_ nsView: UILabel, context: Context) {
-        nsView.textColor = color.toUIColor()
-        nsView.text = fontCode.code
-        nsView.font = fontCode.systemFont(size: CGFloat(fontsize))
-    }
-}
-#endif
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        VStack {
-            FontIcon(.materialIcon(code: .access_alarm), color: .pink, fontsize: 30)
-        }.frame(width: 100, height: 100, alignment: .center)
+        VStack(alignment: .leading){
+            FontIcon.text(.materialIcon(code: .access_alarm), fontsize: 30)
+                .background(Color.red)
+            FontIcon.text(.materialIcon(code: .access_alarm), fontsize: 30)
+                .background(Color.red)
+        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }
 }
