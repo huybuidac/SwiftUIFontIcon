@@ -28,7 +28,7 @@ public enum FontCode {
         case .ionicon:
             return "Ionicons"
         case .materialIcon:
-            return "MaterialIcons-Regular"
+            return "MaterialIcons"
         }
     }
     

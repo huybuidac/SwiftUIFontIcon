@@ -35,10 +35,8 @@ public class FontIcon {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         VStack(alignment: .leading){
+            FontIcon.text(.materialIcon(code: .align_horizontal_center), fontsize: 30)
             FontIcon.text(.materialIcon(code: .access_alarm), fontsize: 30)
-                .background(Color.red)
-            FontIcon.text(.materialIcon(code: .access_alarm), fontsize: 30)
-                .background(Color.red)
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }
 }
