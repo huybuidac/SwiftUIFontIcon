@@ -9,7 +9,7 @@ The library is super super easy to use, just something like this :)
 ### Text
 
 ```swift
-import SwiftIconFont
+import SwiftUIFontIcon
 
 // ...
 
