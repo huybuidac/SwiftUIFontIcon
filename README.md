@@ -9,7 +9,7 @@ The library is super super easy to use, just something like this :)
 ### Text
 
 ```swift
-import SwiftIconFont
+import SwiftUIFontIcon
 
 // ...
 
@@ -39,7 +39,7 @@ You can install it with the following command:
 $ gem install cocoapods
 ```
 
-To integrate SwiftIconFont into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate SwiftUIFontIcon into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 use_frameworks!
@@ -49,7 +49,7 @@ pod 'SwiftUIFontIcon'
 
 ### SPM (Xcode 12 only)
 
-The preferred way of installing SwiftUIX is via the [Swift Package Manager](https://swift.org/package-manager/).
+The preferred way of installing SwiftUIFontIcon is via the [Swift Package Manager](https://swift.org/package-manager/).
 
 >Xcode 12 integrates with libSwiftPM to provide support for iOS, watchOS, and tvOS platforms.
 
