@@ -6,22 +6,26 @@ The easiest way to implement font icons in your SwiftUI project.
 
 The library is super super easy to use, just something like this :)
 
+### Text
+
 ```swift
 import SwiftIconFont
-...
+
+// ...
 
 FontIcon.text(.materialIcon(code: .access_alarm))
-```
-
-There are 2 more options:
-- color
-- fontsize
-
-```swift
 FontIcon.text(.materialIcon(code: .access_alarm), fontsize: 30)
 ```
 
 ![Test Image 3](/resources/demo_code.png)
+
+### Button
+
+```swift
+FontIcon.button(.ionicon(code: .md_add_circle), action: {})
+FontIcon.button(.materialIcon(code: .settings), action: {}, padding: 8)
+    .background(RoundedRectangle(cornerRadius: 4).foregroundColor(.blue))
+```
 
 ## Installation
 

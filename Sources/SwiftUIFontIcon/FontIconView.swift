@@ -30,6 +30,18 @@ public class FontIcon {
         
         return color == nil ? text : text.foregroundColor(color!)
     }
+    
+    public static func button(_ fontCode: FontCode, action: @escaping () -> Void, padding: CGFloat = 0, fontsize: CGFloat = 20, color: Color? = nil) -> some View {
+        return button(fontCode, action: action, padding: .init(top: padding, leading: padding, bottom: padding, trailing: padding), fontsize: fontsize, color: color)
+    }
+    
+    public static func button(_ fontCode: FontCode, action: @escaping () -> Void, padding: EdgeInsets, fontsize: CGFloat = 20, color: Color? = nil) -> some View {
+        Button(action: action) {
+            VStack{
+                text(fontCode, fontsize: fontsize, color: color)
+            }.padding(padding).contentShape(Rectangle())
+        }.buttonStyle(PlainButtonStyle())
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -39,6 +51,7 @@ struct ContentView_Previews: PreviewProvider {
                 .background(Color.red)
             FontIcon.text(.materialIcon(code: .access_alarm), fontsize: 30)
                 .background(Color.red)
+            FontIcon.button(.materialIcon(code: .person), action: {})
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }
 }
